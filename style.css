@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;600&display=swap');
+
+:root {
+  --colorPrimario: #FFB968;
+  --colorSecundario: #707070;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* https://www.w3schools.com/css/css_font_shorthand.asp */
+  /* font: 16px 'Raleway', sans-serif; */
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  color: var(--colorSecundario);
+}
+
+/* globales */
+
+a {
+  text-decoration: none;
+}
+
+/* HEADER */
+
+header {
+  height: 72px;
+  width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+    header a {
+      font-size: 20px;
+      font-weight: 600;
+      color: var(--colorSecundario);
+    }
+
+    header a img {
+      width: 60px;
+      vertical-align: middle;
+      margin-right: 16px;
+    }
+
+    nav a {
+      padding: 12px;
+    }
+  /* Es el estado por defecto sin ser visitado */
+    nav a:link {
+      color: red;
+    }
+    /* Es el estado del a cuando fue visitado */
+    nav a:visited {
+      color: var(--colorPrimario);
+    }
+
+    /* Cuando estoy con el puntero del mouse arriba del a */
+    nav a:hover {
+      color: blueviolet;
+    }
+
+    /* Cuando clickeo el a */
+    nav a:active {
+      color: black;
+    }
+
+/*  HERO BANNER */
+
+#hero {
+  height: 500px;
+  background-image: url(assets/img/hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center -120px;
+
+  display: flex;
+  vertical-align: center;
+}
+
+    #hero div {
+      width: 1100px;
+      margin: auto;
+    }
+
+    #hero h1 {
+      width: 400px;
+      color: var(--colorPrimario);
+    }
+
+    #hero p {
+      width: 400px;
+      margin-top: 24px;
+    }
+
+/*  MAIN */
+
+main {
+  width: 1100px;
+  margin: auto;
+}
+
+    /* Primer separador */
+    #separador h2 {
+      margin-top: 88px;
+      font-size: 32px;
+      color: var(--colorPrimario);
+      text-align: center;
+    }
+    
+    #separador p {
+      width: 600px;
+      margin: 25px auto 88px auto;
+      text-align: center;
+    }
+
+/* PROMOS */
+
+    #promos {
+      display: flex;
+      flex-wrap: wrap; /* respeta los ancho */
+    }
+
+    #promos h2 {
+      font-size: 32px;
+      font-weight: 600;
+      margin-bottom: 24px;
+    }
+
+    #promos #promo1 {
+      background-color: #807871;
+      color: #fff;
+      width: 550px;
+      height: 550px;
+      padding: 100px 80px 100px 80px;
+    }
+
+    #promos #promo2 {
+      background-color: #E3B684;
+      color: #fff;
+      width: 550px;
+      height: 550px;
+      padding: 100px 80px 100px 80px;
+    }
+
+    /* segundo separador "hiking de aventura" */
+
+    #separador2 {
+      height: 200px;
+      display: flex;
+      align-items: center; /* centrar verticalmente */
+      justify-content: center; /* centrar horizontalmente  */
+    }
+        #separador2 h2 {
+          color: var(--colorPrimario);
+          font-size: 32px;
+          font-weight: 600;
+        }
+
+/* HISTORIA */
+
+        #historia {
+          display: flex;
+          justify-content: space-between;
+        }
+
+        #historia article {
+          width: 339px;
+          background-color: #807871;
+          color: #fff;
+        }
+
+        #historia article h3 {
+          margin: 24px 36px 16px 36px;
+        }
+
+        #historia article p {
+          margin: 8px 36px 16px 36px;
+        }
+
+/* CONTACTO */
+
+#contacto {
+  height: 580px;
+  margin-top: 80px;
+  padding-top: 48px;
+  background-image: url(assets/img/hero-3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+    #contacto form {
+      width: 698px;
+      margin: auto;
+      background-color: rgba(255, 255, 255, 0.7);
+      padding: 32px;
+      border-radius: 12px;
+    }
+
+    #contacto label {
+      padding: 8px;
+      display: block;
+    }
+
+    #contacto input, textarea {
+      width: 100%;
+      margin-top: 8px;
+      padding: 12px;
+      border: 1px solid #CECECE;
+      border-radius: 8px;
+      font-family: Raleway;
+      font-size: 16px;
+    }
+    
+    #contacto textarea {
+      height: 80px;
+      resize: vertic  al;
+    }
+
+    #contacto button {
+      background-color: #F7BB74;
+      border: 1px solid #FA9E30;
+      width: 50%;
+      margin-top: 8px;
+      padding: 12px;
+      border-radius: 8px;
+      font-family: Raleway;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    #contacto button:hover {
+      background-color: #f9ad50;
+    }
+
+/* Footer */
+
+footer {
+  background-color: #807871;
+  margin-top: 80px;
+}
+
+    #pie {
+      width: 1100px;
+      margin: auto;
+      height: 180px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: #fff
+    }
+
+    #social img {
+      width: 24px;
+      margin-left: 12px;
+    }
+
+    #enlaces {
+      display: flex;
+    }
+
+    #enlaces ul {
+      margin-left: 76px;
+    }
+    .titulo-lista {
+      font-weight: 600;
+    }
+
+    #enlaces li {
+      list-style-type: none; /* quita bullet de las listas */
+      margin: 4px 0px;
+    }
+
